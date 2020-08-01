@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
+h1, h2, h3, h4, h5, h6, p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin: 0;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, p small {
+  font-size: 70%;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+p {
+  line-height: 1.6em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.input-group .form-control,
+.input-group .form-btn {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.list-inline li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix::after, .list-unstyled::after, .clearfix::before, .list-unstyled::before {
+  display: table;
+  content: '';
+}
+
+.clearfix::after, .list-unstyled::after {
+  clear: both;
+}
+
+.list-inline, .list-unstyled, .list-flex, .list-counter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-inline {
+  margin-bottom: -5px;
+}
+
+.list-inline li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.list-flex {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+}
+
+.list-counter {
+  counter-reset: section;
+}
+
+.list-counter li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.list-counter li::before {
+  counter-increment: section;
+  content: counter(section) ".";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  height: auto;
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+img.max-width {
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figure > a {
+  display: block;
+}
+
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+*:focus {
+  outline: 0;
+}
+
+address {
+  color: #070707;
+  font-style: normal;
+}
+
+.input-group {
+  display: table;
+  width: 100%;
+}
+
+.input-group .form-control,
+.input-group .form-btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+.input-group .form-control {
+  padding: 0;
+  font-size: 16px;
+  height: 40px;
+}
+
+.input-group .form-btn {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.input-group .form-btn-button {
+  height: 40px;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.visible-xs,
+.visible-inline-xs,
+.visible-flex-xs,
+.visible-sm,
+.visible-inline-sm,
+.visible-flex-sm {
+  display: none !important;
+}
+
+.swiper-container {
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+.swiper-container.swiper-container-initialized {
+  visibility: visible;
+}
+
+html {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+html.overflow {
+  overflow: hidden;
+}
+
+html.overflow body .header,
+html.overflow body .section,
+html.overflow body .footer {
+  padding-right: 17px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Montserrat", sans-serif;
+  color: #070707;
+  -webkit-text-size-adjust: 100%;
+  position: relative;
+  line-height: normal;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2;
+}
+
+.container-xs {
+  max-width: 780px;
+}
+
+.container-sm {
+  max-width: 980px;
+}
+
+.container-md {
+  max-width: 1020px;
+}
