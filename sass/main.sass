@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html,
 body
     margin: 0
@@ -54,53 +53,3 @@ body
     .main 
         --s: 110px // size  
         --g: 5px    // space 
-=======
-html,
-body
-    margin: 0
-    padding: 0
-    width: 100%
-    height: 100%
-.main 
-    --s: 285px // size  
-    --g: 10px    // space 
-    --m: calc(var(--s) *3*1.1547/2 + 4* var(--g)  - 2px)
-    display: flex
-    max-width: 1200px
-    margin: calc(var(--g)*-1) auto 0
-
-.portofolio
-    font-size: 0 //disable white space between inline block element 
-    margin: 0 calc(var(--g)*-1)
-    padding-bottom: calc(var(--s) / 4)
-    padding-left: 0
-    list-style: none
-    li 
-        width: var(--s)
-        margin: var(--g)
-        height: calc(var(--s)*1.1547) //  = 1/cos(30)  
-        display: inline-block
-        font-size: initial
-        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%)
-        background: red
-        margin-bottom: calc(var(--g) - var(--s)*0.2885) // = tan(30)/2 
-        text-align: center
-        cursor: pointer 
-        position: relative
-        transition: .3s
-        img
-            position: absolute
-            width: 100%
-            height: 100%
-            object-fit: cover
-            left: 0
-            top: 0
-        &:nth-child(odd) 
-            background: green
-    &::before 
-        content: ""
-        width: calc(var(--s)/2 + var(--g))
-        float: left
-        height: 100%
-        shape-outside: repeating-linear-gradient( transparent 0 calc(var(--m) - 3px), #fff 0 var(--m))
->>>>>>> 3e83cb6fafa42e33af1b22708ff938bd2af78441
