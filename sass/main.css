@@ -7,6 +7,7 @@ body {
 }
 
 .main {
+<<<<<<< HEAD
   --s: calc((var(--w) / var(--c)) - (var(--g) * var(--p)));
   --g: 10px;
   --c: 4;
@@ -15,6 +16,13 @@ body {
   --w: 80vw;
   display: flex;
   max-width: var(--w);
+=======
+  --s: 285px;
+  --g: 10px;
+  --m: calc(var(--s) *3*1.1547/2 + 4* var(--g)  - 2px);
+  display: flex;
+  max-width: 1200px;
+>>>>>>> 3e83cb6fafa42e33af1b22708ff938bd2af78441
   margin: calc(var(--g)*-1) auto 0;
 }
 
@@ -60,6 +68,7 @@ body {
   float: left;
   height: 100%;
   shape-outside: repeating-linear-gradient(transparent 0 calc(var(--m) - 3px), #fff 0 var(--m));
+<<<<<<< HEAD
 }
 
 @media (max-width: 500px) {
@@ -67,4 +76,6 @@ body {
     --s: 110px;
     --g: 5px;
   }
+=======
+>>>>>>> 3e83cb6fafa42e33af1b22708ff938bd2af78441
 }
